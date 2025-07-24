@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kiwi App - Main</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+  <script src="menu.js"></script>
+  <script src="roulette.js"></script>
+  <script src="transfer.js"></script>
+  <script src="collection.js"></script>
+</head>
+<body>
+  <h1>Kiwi App</h1>
+  <nav>
+    <button onclick="showSection('roulette')">Рулетка</button>
+    <button onclick="showSection('collection')">Коллекция</button>
+    <button onclick="showSection('transfer')">Передать подарок</button>
+    <button onclick="logout()">Выйти</button>
+  </nav>
+  <div id="roulette" style="display:none;">Рулетка тут</div>
+  <div id="collection" style="display:none;">Коллекция тут</div>
+  <div id="transfer" style="display:none;">Передача подарка тут</div>
+</body>
+</html>
